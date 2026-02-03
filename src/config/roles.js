@@ -5,6 +5,7 @@ const ROLES = {
   TRIBUNAL_MEMBER: 'tribunal_member',
   REQUESTING_PARTY: 'requesting_party',
   RESPONDENT: 'respondent',
+  PROSECUTOR: 'prosecutor',
   ADMIN: 'admin',
 };
 
