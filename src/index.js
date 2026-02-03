@@ -8,6 +8,7 @@ const authRoutes = require('./routes/auth');
 const referralRoutes = require('./routes/referrals');
 const tribunalRoutes = require('./routes/tribunals');
 const assessmentRoutes = require('./routes/assessments');
+const pajsmRoutes = require('./routes/pajsm');
 const { errorHandler } = require('./middleware/errorHandler');
 
 const app = express();
@@ -22,6 +23,7 @@ app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/referrals', referralRoutes);
 app.use('/api/v1/tribunals', tribunalRoutes);
 app.use('/api/v1/assessments', assessmentRoutes);
+app.use('/api/v1/pajsm', pajsmRoutes);
 
 app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
